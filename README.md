@@ -10,9 +10,3 @@ Install `lim`:
 # Available for both macOS and Linux.
 brew install limrun-inc/tap/lim
 ```
-
-Start an Android instance:
-
-```bash
-lim run android
-```
