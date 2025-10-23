@@ -1,7 +1,7 @@
 class Lim < Formula
   desc "Lim run everything - get remote sandboxes for Android, iOS, and more"
   homepage "https://lim.run"
-  version "v0.4.1"
+  version "v0.4.2"
   license "Proprietary"
 
   depends_on "limrun-inc/tap/adb"
@@ -18,13 +18,13 @@ class Lim < Formula
       depends_on "limrun-inc/tap/scrcpy"
 
       url "https://github.com/limrun-inc/lim/releases/download/#{version}/lim-darwin-arm64"
-      sha256 "3ca36aa4c8bdb4db686f7e8ca6b730e468e350c44555dfd1d50cbce13ee03db8" # replace_with_darwin_arm64_sha256
+      sha256 "32efc47b45b52a837a1e0949aa8ca6099c48fef020fa6c978477494e9a8ffedb" # replace_with_darwin_arm64_sha256
     else
       # scrcpy does not yet publish static builds for darwin-amd64
       depends_on "scrcpy"
 
       url "https://github.com/limrun-inc/lim/releases/download/#{version}/lim-darwin-amd64"
-      sha256 "c3c9d649d92e73593e57cff9a678e14762fc395f9bdaf461f453fb7fc565654c" # replace_with_darwin_amd64_sha256
+      sha256 "8e3b25ece84051b82c6c96eed1618e627b39f123967e26635acfc36726054227" # replace_with_darwin_amd64_sha256
     end
   end
 
@@ -34,12 +34,12 @@ class Lim < Formula
       depends_on "scrcpy"
 
       url "https://github.com/limrun-inc/lim/releases/download/#{version}/lim-linux-arm64"
-      sha256 "14de5c4f083b0e2bab6730b4e763a21f133983f68a43f28cd89d1ac54542935c" # replace_with_linux_arm64_sha256
+      sha256 "95faefb7e65be9678bce0f9dfc578ab6c1a65f6431aafc300424fcb42f6408e5" # replace_with_linux_arm64_sha256
     else
       depends_on "limrun-inc/tap/scrcpy"
 
       url "https://github.com/limrun-inc/lim/releases/download/#{version}/lim-linux-amd64"
-      sha256 "033a72265332a22a0c0e75144d2c190f16e00614b0fb3bcdc52f97d2d637e778" # replace_with_linux_amd64_sha256
+      sha256 "9d318971c8d3717bac28a1a4e9f301bdfa2a5599f6feed5b76948842221d35bf" # replace_with_linux_amd64_sha256
     end
   end
 
