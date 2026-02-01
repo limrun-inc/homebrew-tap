@@ -10,3 +10,10 @@ Install `lim`:
 # Available for both macOS and Linux.
 brew install limrun-inc/tap/lim
 ```
+
+Install `limguard` (WireGuard mesh network manager):
+
+```bash
+# Available for both macOS and Linux.
+brew install limrun-inc/tap/limguard
+```
