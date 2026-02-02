@@ -1,26 +1,26 @@
 class Limguard < Formula
   desc "WireGuard mesh network manager - deploy and manage WireGuard peers with a single YAML config"
   homepage "https://github.com/limrun-inc/limguard"
-  version "v0.10.2"
+  version "v0.10.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/limrun-inc/limguard/releases/download/#{version}/limguard-darwin-arm64"
-      sha256 "75bb31c4c2aa280e00af768b094a32b527407557117a4a27f21c939f782ebd95" # replace_with_darwin_arm64_sha256
+      sha256 "054353a60a3d9a2223557fb83af34a4d4bf717d447b4dea4fdce98ba3744216e" # replace_with_darwin_arm64_sha256
     else
       url "https://github.com/limrun-inc/limguard/releases/download/#{version}/limguard-darwin-amd64"
-      sha256 "1f01dabcd1e8ba3aec9669db2379e105960c47d659bd4b68d8c45feb55f6a8b8" # replace_with_darwin_amd64_sha256
+      sha256 "2dc7873966069886fa4fa40d96352d97468bb11a7b405fce0bdcfefae55c37e8" # replace_with_darwin_amd64_sha256
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/limrun-inc/limguard/releases/download/#{version}/limguard-linux-arm64"
-      sha256 "17163cc96348053d0de79be6636bba22a209e010faad73e292c9c46252d74f1c" # replace_with_linux_arm64_sha256
+      sha256 "36aab16f5016d110668014487ff3de5ca14b024e5a5e1bb4d1471c60d47e6c68" # replace_with_linux_arm64_sha256
     else
       url "https://github.com/limrun-inc/limguard/releases/download/#{version}/limguard-linux-amd64"
-      sha256 "dad5df58b06347786b858e9b2082a5b5c80f5054d09bb4cf5b25359fb8495ed0" # replace_with_linux_amd64_sha256
+      sha256 "50d56ba82f540189e17a8901161884a860f6d19436a04c1ad02d7204e33a9a92" # replace_with_linux_amd64_sha256
     end
   end
 
